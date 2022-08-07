@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+li,
+ul {
+	list-style-type: none;
+	text-transform: none;
+	text-decoration: none;
+}
+
+a {
+	text-transform: none;
+	text-decoration: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	text-decoration: none;
+}
+
+html,
+body {
+	font-family: 'Montserrat';
+	color: #212121;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #f09433;
+	box-shadow: inset 0 0 6px rgba(251, 255, 0, 0.6);
+	-webkit-box-shadow: inset 0 0 6px rgba(251, 255, 0, 0.6);
+}
+
+/*-----------------*/
+
+.wraper {
+	max-width: 1550px;
+	overflow-x: hidden;
+	margin: 0 auto;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+}
+
+.__container {
+	width: 100%;
+	position: relative;
+	margin: 0 auto
+}
+
+/* -------------------------------------- */
+
+.header__container {
+	height: 796px;
+	background: url(../img/header/Design.png)right,
+		url(../img/header/plase.jpg)left;
+	position: fixed;
+	background-size: contain, 53%;
+	background-repeat: no-repeat, no-repeat;
+}
+
+
+.header__navbar {
+	width: 100%;
+	padding: 28px 0px 145px 40px;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.block-logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 0 auto;
+	padding-left: 300px;
+}
+
+.menu_link {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0px 19px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.menu_link:hover {
+	text-decoration: underline;
+}
+
+
+#burg_menu {
+	display: none;
+	cursor: pointer;
+	-webkit-transition: 0.33s ease-in-out;
+	transition: 0.33s ease-in-out;
+	color: #fff;
+	font-size: 32px;
+}
+
+#burg_menu:hover {
+	color: #3C82F4;
+}
+
+.header__content {
+	max-width: -webkit-max-content;
+	max-width: -moz-max-content;
+	max-width: max-content;
+	text-align: left;
+	padding-left: 440px;
+	margin: 0 auto;
+}
+
+.search-box {
+	min-width: 10px;
+	margin: 0 auto;
+}
+
+
+/* ------------------------searh----------------------------------- */
+.search-btn {
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	margin: 0 auto;
+	border-radius: 50%;
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+	min-width: -webkit-max-content;
+	min-width: -moz-max-content;
+	min-width: max-content
+}
+
+.search-txt {
+	border: none;
+	outline: none;
+	background: none;
+	border-radius: 40px;
+	color: #000000;
+	padding-left: 5px;
+	font-size: 16px;
+	transition: .4s;
+	line-height: 20px;
+	margin: 0 auto;
+	width: 0;
+	
+}
+
+
+.search-box:hover .search-txt {
+	width: 140px;
+	background-color: #ffffff;
+}
+
+
+/* ------------------------searh----------------------------------- */
+
+
+.main {
+	flex: 1 1 auto;
+	padding: 0 auto;
+}
+
+[class*="__container"] {
+	width: 100%;
+	position: relative;
+	margin: 0 auto
+}
+
+.btn {
+	width: 245px;
+	height: 50px;
+	background-color: #ffc200;
+	font-family: Montserrat;
+	font-size: 19.3px;
+	line-height: 1.2;
+	font-weight: 700;
+	padding: 16px 56px;
+	border-radius: 4px;
+	color: #333333;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: #f0f0f0;
+}
+
+/* --------------------------------about--------------------------------------- */
+.about__title {
+	font-family: 'Grand Hotel';
+	font-size: 75px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333333;
+}
+
+.about__subtitle {
+	font-family: Montserrat;
+	font-size: 25.3px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333333;
+}
+
+
+.about {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-bottom: 200px;
+}
+
+.about__content {
+	width: 896px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding: 139px 0 78px 0;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #333333;
+}
+
+.about__title {
+	text-align: center;
+	font-family: 'Grand Hotel';
+	font-size: 75px;
+}
+
+.about__subtitle {
+	padding: 45px 0px 0 0px;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 25.3px;
+}
+
+.about__row {
+	padding-bottom: 75px;
+	display: flex;
+	justify-content: center;
+}
+
+.about__column {
+	width: 241px;
+	height: 341px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.item-about__icon {
+	width: 239px;
+	height: 238px;
+}
+
+.item-about__title {
+	font-family: 'Grand Hotel';
+	font-size: 41.7px;
+	line-height: 1.2;
+	font-weight: 400;
+	padding: 15px 0 25px 0;
+}
+
+.item-about__text {
+	font-family: Montserrat;
+	font-size: 16.9px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333333;
+}
+
+
+
+/* =------------------------------------------------------= */
+
+.title {
+	padding-top: 10px;
+	font-family: 'Grand Hotel';
+	font-size: 100px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #ffc200;
+}
+
+.subtitle {
+	padding: 32px 0 52px 0;
+	font-family: Montserrat;
+	font-size: 24.7px;
+	line-height: 1.2;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+
+
+/* ------------------------------------portfolio------------------------ */
+
+
+.portfolio {
+	width: 100%;
+	height: 910px;
+	background-color: #303030;
+	background-image: url(../img/Design.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.portfolio__content {
+	width: 896px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 139px 0 78px 0;
+	text-align: center;
+}
+
+.portfolio__row {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio__colum {
+	padding: 0 50px;
+	padding-bottom: 30px;
+}
+
+.portfolio__item {
+	width: 233px;
+	height: 233px;
+	border: 5px solid #ffffff;
+	border-radius: 50%;
+	align-items: center;
+	margin: 0 auto;
+
+}
+
+.item-portfolio {
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+}
+
+.item-portfolio__title {
+	font-family: Montserrat;
+	font-size: 50.6px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #ffc200;
+	padding-top: 22%;
+}
+
+.item-portfolio__subtitle {
+	font-family: Montserrat;
+	font-size: 28.9px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-top: 20px;
+}
+
+/* ---------------------------------------------servix------------------------------ */
+.services__container {
+	background-position: bottom;
+	background-image: url(../img/vector_up.png);
+	width: 100%;
+	height: 680px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.services__content {
+	max-width: 1440px;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.services__items {
+	padding-top: 120px;
+	padding-left: 240px;
+	position: relative;
+}
+
+.services__img {
+	width: 100%;
+	max-width: 465px;
+	padding-left: 116px;
+	float: left;
+	position: relative;
+}
+
+/* -------------------------------servbotm---------- */
+.servbotm {
+	height: 1000px;
+}
+
+.servbotm__container {
+	background-image: url(../img/Vector__bottom1.png);
+	max-width: 100%;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.servbotm__content {
+	max-width: 1440px;
+	display: flex;
+	padding-top: 100px;
+	padding-right: 130px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.servbotm__items {
+	float: left;
+	margin: 0 auto;
+	position: relative;
+}
+
+.servbotm__img {
+	width: 100%;
+	max-width: 465px;
+	height: auto;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.serbotm__subtitle {
+	width: 587px;
+}
+
+/* --------------------------------plase------------------ */
+.place {
+	width: 100%;
+	height: 796px;
+	background-image: linear-gradient(to top, rgba(255, 210, 0, 0.8), rgba(255, 210, 0, 0.8)), url(../img/place.png);
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, cover;
+	filter: contrast(120%);
+	background-position: center;
+	margin: 0;
+}
+
+
+.place__content {
+	width: 918px;
+	margin: 0 auto;
+	padding-top: 271px;
+	align-items: center;
+	text-align: center;
+}
+
+.place__subtitle {
+	height: 100px;
+	font-family: Montserrat;
+	font-size: 44.9px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333333;
+}
+
+.place__title {
+	font-family: 'Grand Hotel';
+	padding-top: 45px;
+	font-size: 74.2px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333333;
+}
+
+/* ----------------------------------sibscribe--------------- */
+
+
+.sibscribe__conteainer {
+	background-color: #f0f0f0;
+	background-image: url(../img/layers.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 676px;
+}
+
+.sibscribe__content {
+	
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0;
+	padding-top: 152px;
+}
+
+
+.sibscribe__title {
+	color: #333333;
+}
+
+.sibscribe__subtitle {
+	font-family: Montserrat;
+	font-size: 29.8px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333333;
+}
+
+input {
+	width: 500px;
+	height: 63px;
+	margin-top: 54px;
+	margin-left: 52px;
+	border-radius: 4px 0px 0px 4px;
+	line-height: 1.2;
+	font-family: Montserrat;
+	font-size: 25px;
+	padding: 0;
+
+}
+
+.submit-text {
+	background-color: #ffffff;
+	font-weight: 400;
+	color: #333333;
+	padding-left: 10px;
+}
+
+.btn__submit {
+	width: 222px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #ffc200;
+	margin-left: -20px;
+}
+
+.btn__submit:hover {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/* -------------------------------------footer------------------------------------- */
+
+.footer {
+	width: 100%;
+	height: 845px;
+	background-color: #303030;
+	margin: 0 auto;
+}
+
+.footer__row {
+	display: flex;
+}
+
+.footer__colum {
+	width: 462px;
+	margin: 0 auto;
+	padding-top: 257px;
+	margin-left: 93px
+}
+
+.footer__title {
+	font-family: Montserrat;
+	font-size: 25px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.footer__subtitle {
+	display: flex;
+	font-size: 23.6px;
+	font-weight: 400;
+	color: #ffffff;
+	padding: 38px 0;
+}
+
+
+.fa-2x {
+	padding: 8px 10px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	margin-left: 8px;
+	border-radius: 50%;
+	font-size: 400px;
+	background-color: #f0f1f1;
+	color: #303030;
+}
+
+.fa-facebook {
+	padding: 8px 15px;
+}
+
+.fa-facebook:hover {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-twitter:hover {
+	background: #55ACEE;
+	color: white;
+}
+
+.fa-instagram:hover {
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	color: white;
+}
+
+.fa-whatsapp:hover {
+	background: #43d854;
+	color: white;
+}
+
+.container {
+	margin-right: 48px;
+	padding-top: 257px;
+}
+
+.container h1 {
+	font-family: Montserrat;
+	font-size: 25px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-bottom: 37px;
+}
+
+.footer__item a {
+	font-family: Montserrat;
+	font-size: 23.6px;
+	line-height: 41px;
+	font-weight: 400;
+	color: #ffffff;
+	padding-bottom: 17px;
+}
+
+.footer__item:hover a {
+	text-decoration: underline;
+}
+
+
+
+
+
+.topbutton {
+	width: 50px;
+	background: linear-gradient(135deg, #d9ff00 0%, #ff8c00 100%);
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	cursor: pointer;
+	color: #333;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-khtml-border-radius: 50%;
+ }
