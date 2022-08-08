@@ -131,13 +131,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-#burg_menu {
+.hamburger {
 	display: none;
 	cursor: pointer;
-	-webkit-transition: 0.33s ease-in-out;
-	transition: 0.33s ease-in-out;
-	color: #fff;
-	font-size: 32px;
 }
 
 #burg_menu:hover {

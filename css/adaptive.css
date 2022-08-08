@@ -57,20 +57,94 @@
     height: 696px;
   }
 
-  .header__navbar {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 20px;
-  }
-
-  .menu,
   .search-box {
     display: none;
   }
 
-  #burg_menu {
-    display: block;
+  .menuIcon {
+    background: none;
   }
+
+
+  .header-menu {
+    justify-content: space-between;
+
+  }
+
+  .fa-2x {
+    margin: 0 auto;
+  }
+
+  .menuIcon {
+    color: burlywood;
+  }
+
+  .closeIcon {
+    color: red;
+    background: none;
+  }
+
+  .hamburger {
+    background: inherit;
+    cursor: pointer;
+    display: flex;
+    margin-right: 150px;
+    justify-content: center;
+    z-index: 600;
+  }
+
+  .menu {
+    position: absolute;
+    transform: translateY(-100%);
+    top: 0;
+    left: 0;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    z-index: 500;
+    background: rgb(118, 138, 4);
+    list-style: none;
+  }
+
+  .menu__list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .menu_link {
+    border: none;
+    z-index: 10;
+    padding: 0px;
+    margin: 20px;
+    font-weight: 20px;
+  }
+
+  .showMenu {
+    transform: translate(0);
+    transition: transform 1s;
+    width: 100%;
+    justify-content: center;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
   .about__content {
     width: 100%;
@@ -201,12 +275,14 @@
 @media (max-width:725px) {
 
   .title,
-  .about__title{
+  .about__title {
     font-size: 15vw;
   }
-  .footer__title{
+
+  .footer__title {
     font-size: 10vw;
   }
+
   .place__title {
     font-size: 6vw;
   }
@@ -258,23 +334,27 @@
   .servbotm__container {
     height: 100%;
   }
-  .item-portfolio{
+
+  .item-portfolio {
     width: 50px;
     height: 50px;
   }
-  .submit-text{
+
+  .submit-text {
     width: 90%;
     height: 55px;
   }
-  .btn__submit{
+
+  .btn__submit {
     width: 60%;
     height: 40px;
     font-size: 4vw;
   }
 
-  .fa-2x{
+  .fa-2x {
     font-size: 3.8vw;
   }
+
   .fa-facebook {
     padding: 8px 10px;
   }
