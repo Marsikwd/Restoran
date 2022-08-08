@@ -667,18 +667,21 @@ input {
 
 
 
-.topbutton {
-	width: 50px;
+#up {
+	height: 35px;
+	width: 35px;
 	background: linear-gradient(135deg, #d9ff00 0%, #ff8c00 100%);
-	text-align: center;
-	padding: 15px 0px 15px 0px;
+	border-radius: 50%;
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
 	cursor: pointer;
-	color: #333;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-khtml-border-radius: 50%;
+}
+
+#up::before {
+	content: url('../img/scrollup.png');
+	display: flex;
+	padding-top: 5px;
+	justify-content: center;
+	align-items: center;
 }
